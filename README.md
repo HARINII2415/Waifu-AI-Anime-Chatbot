@@ -1,166 +1,111 @@
-🌸 Waifu AI – Anime Voice Assistant
-Your personal anime-style AI companion built with Python
-<p align="center"> <img src="https://i.imgur.com/sS6wXbb.gif" width="400px" /> </p>
-💠 Overview
+🌸 Waifu AI – Anime Style Voice Assistant
 
-Waifu AI is an anime-inspired voice assistant capable of talking, listening, understanding natural language, opening apps, searching, setting timers, and performing real-time tasks — all with a cute anime-style voice like Nanami, Neerja, or Jenny Neural.
+Python 3.11+ | OpenRouter API | Edge-TTS | Tkinter GUI | Voice Assistant
 
-This project was built after a random Instagram reel inspired me to explore voice AI — and it turned into one of my most fun and creative builds so far 💞.
+🚀 Project Overview
 
-🎀 Features
-🗣️ Anime-style Voice Output
+Waifu AI is an anime-style virtual assistant that listens, talks, opens websites, searches, explains topics, sets timers, and interacts using cute anime voices like Nanami, Neerja, and Jenny.
 
-Natural Japanese voice (ja-JP-NanamiNeural)
+This project started from an Instagram reel inspiration and evolved into a complete AI desktop assistant with voice + GUI.
 
-Indian English voice (en-IN-NeerjaNeural)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/HARINII2415/Waifu-AI-Anime-Chatbot/main/elf2.gif" width="350" alt="Waifu AI Banner">
+</p>
 
-American English voice (en-US-JennyNeural)
+🛠️ Features
 
-🔊 Real-time Speech Recognition
+🎤 Voice recognition (Press F2 to speak)
 
-Trigger the mic using F2
+🎧 Anime-style TTS (Japanese / English / Indian voices)
 
-Converts your voice into text instantly
+🤖 AI chat using OpenRouter
 
-🤖 Smart Conversations
+🌐 Opens any website (YouTube, Google, Instagram…)
 
-Powered by OpenRouter AI API
+🔍 Searches on Google, YouTube, ChatGPT
 
-Understands commands + engages in cute small talk
+📚 Wikipedia “Explain / Who is”
 
-🌐 Web Automation
+🎶 Spotify search
 
-Say commands like:
-
-“Open YouTube"
-
-“Search anime fights on YouTube”
-
-“Search AI tools on Google”
-
-🎶 Spotify Integration
-
-Searches for your song
-
-Opens it on Spotify
-
-(User presses play due to latest Spotify update)
-
-📚 Wikipedia Integration
-
-“Who is Elon Musk?”
-
-“Explain quantum physics”
-
-“Define blockchain”
+🔁 Repeat-after-me
 
 ⏰ Timers
 
-“Set timer for 10 seconds”
+💬 Small talk responses
 
-“Set timer for 2 minutes”
+🎨 Tkinter GUI with animated GIF
 
-🎥 Beautiful Animated GUI
+⚡ Both EXE + Python versions
 
-Uses Tkinter + GIF animation
-
-Custom-built UI with aesthetic colors
-
-💾 Two Versions Available
-Version	Description
-Wifu (EXE)	Offline version, runs without Python
-Hori (API)	Online version with natural speech + AI chat
-🧠 Tech Stack
-
-Python 3.11+
-
-Microsoft Edge TTS
-
+📦 Requirements
+Python 3.10+
+edge-tts
+playsound
 SpeechRecognition
+pygetwindow
+pyautogui
+wikipedia
+Pillow
+requests
+tkinter
 
-Tkinter GUI
 
-Wikipedia API
+Install:
 
-OpenRouter AI
-
-PyInstaller (for EXE build)
-
-📦 Installation (Hori – Online Version)
-git clone https://github.com/HARINII2415/Waifu-AI-Anime-Chatbot/
-cd waifuaichatbot
-
-1️⃣ Create Virtual Environment
-python -m venv venv
-venv\Scripts\activate
-
-2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Add Your API Key
+🧩 Code Structure
+waifuaichatbot/
+│
+├── horiAI.py              # Online version (API)
+├── waifuAI.py             # Offline EXE version
+├── waifuAI.exe            # Ready-to-run executable
+├── responses4u.py         # Custom small-talk replies
+├── requirements.txt       # Dependencies
+├── elf2.gif               # GUI background animation
+├── voices.txt             # EdgeTTS voices
+└── User Guide.txt         # Documentation
 
-Open horiAI.py and replace:
+💡 How It Works (Short)
+
+Press F2 → AI listens
+
+Speech → text (SpeechRecognition)
+
+AI generates reply (OpenRouter)
+
+Text → anime voice (Edge-TTS)
+
+GUI displays conversation
+
+Assistant executes commands
+
+▶️ Running
+Online (Hori)
+python horiAI.py
+
+Offline (Wifu EXE)
+
+Double-click:
+
+waifuAI.exe
+
+🔐 Add Your API Key
+
+Inside horiAI.py:
 
 OPENROUTER_API_KEY = "your_api_key_here"
 
-4️⃣ Run the Project
-python horiAI.py
+🤝 Contributions
 
-💻 Running the EXE (Offline Version)
+Feel free to fork, submit PRs, and improve the project!
 
-Download the EXE from the repo or release page
+📫 Contact
 
-Double-click waifuAI.exe
+Created by Harini A
+📧 harinii2415@gmail.com
 
-Enjoy your anime assistant 💕
+🔗 LinkedIn: https://www.linkedin.com/in/harini-a-9a014925a/
 
-🗂️ Project Structure
-waifuaichatbot/
-│
-├── horiAI.py              # Online AI version
-├── waifuAI.py             # Offline version
-├── waifuAI.exe            # Compiled EXE
-├── responses4u.py         # Custom response mappings
-├── requirements.txt       # Dependencies
-├── elf2.gif               # Animated background
-├── User Guide.txt         # Documentation
-└── voices.txt             # List of supported TTS voices
-
-🖼️ Screenshots
-
-(Add your screenshots here later)
-Example placeholder:
-
-<p align="center"> <img src="https://i.imgur.com/g6u3G8w.png" width="600px"> </p>
-🔥 Future Enhancements
-
-Wake-word activation (“Hey Waifu”)
-
-Custom training data
-
-Built-in memory system
-
-GPT-style chat history
-
-Anime avatar lip-sync
-
-Web version deployable on Netlify
-
-🌟 Author
-
-👩‍💻 Harini A
-🎓 B.Tech IT | M.Kumarasamy College of Engineering
-📍 Dindigul, Tamil Nadu, India
-
-🌐 Portfolio: https://harinii2415.github.io
-
-💼 LinkedIn: https://www.linkedin.com/in/harini-a-9a014925a/
-
-🐙 GitHub: https://github.com/HARINII2415
-
-💖 Final Note
-
-This project started as a small inspiration from an Instagram reel —
-and grew into a full-fledged anime-style AI assistant.
-
-“Anything you imagine can become reality if you start building.” 💫
+Happy Coding & Creating! 🌸🚀💖
